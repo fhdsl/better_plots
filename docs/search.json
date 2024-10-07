@@ -164,7 +164,7 @@
     "href": "02-decluttering.html#theming",
     "title": "2  Decluttering Plots",
     "section": "2.6 Theming",
-    "text": "2.6 Theming\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.",
+    "text": "2.6 Theming\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWith Python, we will be setting options on our graphs either at the graph level my_plot.set_xtitles(), the seaborn level: sns.set_theme(), or at the matplotlib level: plt.axhline()",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -174,7 +174,7 @@
     "href": "02-decluttering.html#removing-stuff",
     "title": "2  Decluttering Plots",
     "section": "2.7 Removing Stuff",
-    "text": "2.7 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss on slack:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
+    "text": "2.7 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss online or with your neighbor:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
