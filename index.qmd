@@ -28,13 +28,6 @@ pyodide:
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
-## Overview
-
-- Part 1: Getting Started
-- Part 2: Decluttering
-- Part 3: Annotating
-- Part 4: Highlighting
-
 ## Reminder
 
 This workshop adheres to the DaSL Learning Community Participation Guidelines:
@@ -45,6 +38,28 @@ Please be respectful of your fellow learners and help each other learn.
 
 Remember, it's dangerous to learn alone! So partner up with someone, it's fun to learn together.
 
+## How This Workshop Works
+
+There are two separate tabs for each demo - an R one and a Python one. Pick your path. Both of them are loaded into the web browser, so feel free to switch between them to try out different approaches.
+
+- For R users, we will be using the `ggplot2` package
+- For Python Users, we will be using the `seaborn` package. 
+
+The play button on the right of a code window lets you execute that code.
+
+Note that there are two levels of setting options for Python code: the `seaborn` level and the `matplotlib` level, because `seaborn` is an extension of `matplotlib`. `seaborn` options look like this:
+
+```python
+my_plot.set_xlabel("Python Rules")
+```
+
+Versus the `matplotlib` level, which looks like this:
+
+```python
+plt.show()
+```
+
+Because this is not JupyterLab, note that we always have to end our statements with `plt.show()` to show the plot.
 
 ## Overview of Data
 

@@ -25,8 +25,16 @@ pyodide:
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
+## Quick Reminder of our plots
+
+This is the plot we're going to start dressing up today. 
+
+::::{.panel-tabset group="language"}
+## R
+
 ```{webr}
 #| echo: false
+#| autorun: true
 library(ggplot2)
 library(dplyr)
 
@@ -39,10 +47,14 @@ my_plot <-
   geom_line()
 
 my_plot
+
 ```
+
+## Python
 
 ```{pyodide}
 #| echo: false
+#| autorun: true
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -57,7 +69,7 @@ ax = sns.lineplot(data=tv_shows,
 
 plt.show()
 ```
-
+::::
 
 ## Why do we need to declutter our graphs?
 

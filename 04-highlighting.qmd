@@ -130,6 +130,7 @@ plt.show()
 What if we only want to highlight one group in the data? In this case, maybe we want to highlight the *risers* in our dataset. If we color them blue, and leave the others as `grey` we can immediately highlight them as important and worth noticing in the context of the other data.
 
 ::::{.panelset-tabset group="language"}
+
 ## R
 
 We can actually manually color our traces by using `scale_color_manual()`. This lets us manually map our values in our variable (`riser` and `faller`) to colors: (`blue` and `grey`).
