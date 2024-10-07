@@ -10,6 +10,16 @@
     ]
   },
   {
+    "objectID": "index.html#reminder",
+    "href": "index.html#reminder",
+    "title": "Better Plots",
+    "section": "Reminder",
+    "text": "Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
+    "crumbs": [
+      "Better Plots"
+    ]
+  },
+  {
     "objectID": "index.html#how-this-workshop-works",
     "href": "index.html#how-this-workshop-works",
     "title": "Better Plots",
@@ -70,13 +80,13 @@
     ]
   },
   {
-    "objectID": "01-setup.html#assigning-our-plot-so-we-can-reuse-it-3-min.",
-    "href": "01-setup.html#assigning-our-plot-so-we-can-reuse-it-3-min.",
-    "title": "2  Setting up Our plot",
-    "section": "2.4 Assigning our plot so we can reuse it (3 min).",
-    "text": "2.4 Assigning our plot so we can reuse it (3 min).\nLet’s save our plot into an R object called a ggplot. We’ll use the &lt;- (left arrow) to assign it to the variable called my_plot:\n\nRPython",
+    "objectID": "01-setup.html#dressing-up-a-base-plot",
+    "href": "01-setup.html#dressing-up-a-base-plot",
+    "title": "1  Setting up Our plot",
+    "section": "1.4 Dressing Up a Base Plot",
+    "text": "1.4 Dressing Up a Base Plot\nWe’ll start with a base plot that we’ll dress up. Here’s what that looks like.\n\nRPython\n\n\nLet’s save our plot into an R object called a ggplot. We’ll use the &lt;- (left arrow) to assign it to the variable called my_plot:\n\n\n\n\n\n\n\n\n\n\nWe need a few packages for Python. We need the pandas, seaborn, and matplotlib packages.\nWe will start by making a plot object with sns.lineplot():",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
@@ -252,131 +262,131 @@
   {
     "objectID": "03-annotating.html",
     "href": "03-annotating.html",
-    "title": "4  Annotating Your Plot",
+    "title": "3  Annotating Your Plot",
     "section": "",
-    "text": "4.1 Learning Objectives",
+    "text": "3.1 Learning Objectives",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#learning-objectives",
     "href": "03-annotating.html#learning-objectives",
-    "title": "4  Annotating Your Plot",
+    "title": "3  Annotating Your Plot",
     "section": "",
     "text": "Learn about how annotations can help your viewer\nModify titles using labs()\nAdding reference lines\nAnnotating directly onto the graph\nChanging the scale",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#guiding-your-viewer",
     "href": "03-annotating.html#guiding-your-viewer",
-    "title": "4  Annotating Your Plot",
-    "section": "4.2 Guiding Your Viewer",
-    "text": "4.2 Guiding Your Viewer\nAnother way we can guide people through our visualization is by using annotations, which can be very helpful in guiding someone through our figure. Let’s review some best practices.",
+    "title": "3  Annotating Your Plot",
+    "section": "3.2 Guiding Your Viewer",
+    "text": "3.2 Guiding Your Viewer\nAnother way we can guide people through our visualization is by using annotations, which can be very helpful in guiding someone through our figure. Let’s review some best practices.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#use-your-titlescaptions",
     "href": "03-annotating.html#use-your-titlescaptions",
-    "title": "4  Annotating Your Plot",
-    "section": "4.3 Use your titles/captions!",
-    "text": "4.3 Use your titles/captions!\n\nTitles can guide people to the point of your figure\nPrimes people to know what to look for\n“If there is a conclusion you want your audience to reach, state it in words” - Cole Nussbaum Knaflic",
+    "title": "3  Annotating Your Plot",
+    "section": "3.3 Use your titles/captions!",
+    "text": "3.3 Use your titles/captions!\n\nTitles can guide people to the point of your figure\nPrimes people to know what to look for\n“If there is a conclusion you want your audience to reach, state it in words” - Cole Nussbaum Knaflic",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#dont-label-everything",
     "href": "03-annotating.html#dont-label-everything",
-    "title": "4  Annotating Your Plot",
-    "section": "4.4 Don’t label everything",
-    "text": "4.4 Don’t label everything\n\n\n\nThink about only labeling the data that matters\nIf you want someone to compare two shows, label them\nThink about groupings and “super categories” to help your viewers make sense of the graph]",
+    "title": "3  Annotating Your Plot",
+    "section": "3.4 Don’t label everything",
+    "text": "3.4 Don’t label everything\n\n\n\nThink about only labeling the data that matters\nIf you want someone to compare two shows, label them\nThink about groupings and “super categories” to help your viewers make sense of the graph]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#social-media-preference-example",
     "href": "03-annotating.html#social-media-preference-example",
-    "title": "4  Annotating Your Plot",
-    "section": "4.5 Social Media Preference Example",
-    "text": "4.5 Social Media Preference Example\n\n\n\n\n\n\n\n\n\nhttps://datawoj.co.uk/visualising-data-on-which-social-media-network-us-teenagers-prefer/",
+    "title": "3  Annotating Your Plot",
+    "section": "3.5 Social Media Preference Example",
+    "text": "3.5 Social Media Preference Example\n\n\n\n\n\n\n\n\n\nhttps://datawoj.co.uk/visualising-data-on-which-social-media-network-us-teenagers-prefer/",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#before-you-move-on-discuss",
     "href": "03-annotating.html#before-you-move-on-discuss",
-    "title": "4  Annotating Your Plot",
-    "section": "4.6 Before you move on, discuss:",
-    "text": "4.6 Before you move on, discuss:\nWhat TV Show do you want to highlight with text? Why is it interesting to you? Is there a trend you want to highlight?",
+    "title": "3  Annotating Your Plot",
+    "section": "3.6 Before you move on, discuss:",
+    "text": "3.6 Before you move on, discuss:\nWhat TV Show do you want to highlight with text? Why is it interesting to you? Is there a trend you want to highlight?",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#changing-titles",
     "href": "03-annotating.html#changing-titles",
-    "title": "4  Annotating Your Plot",
-    "section": "4.7 Changing Titles",
-    "text": "4.7 Changing Titles\nThere is a function called labs() that will let you change the titles for a graph. Figure out where these titles are added to the graph below.\n\nRPython\n\n\n\n\n\n\n\n\n\n\nWhy is labs() not part of theme()? This is one confusing thing about ggplot2. theme() is about the appearance (position, angle, font size) of an element, whereas the labs() function actually provides the content.\n\n\nWe can use the .set_title() and set_xlabel()/set_ylabel() to change our titles and labels.",
+    "title": "3  Annotating Your Plot",
+    "section": "3.7 Changing Titles",
+    "text": "3.7 Changing Titles\nThere is a function called labs() that will let you change the titles for a graph. Figure out where these titles are added to the graph below.\n\nRPython\n\n\n\n\n\n\n\n\n\n\nWhy is labs() not part of theme()? This is one confusing thing about ggplot2. theme() is about the appearance (position, angle, font size) of an element, whereas the labs() function actually provides the content.\n\n\nWe can use the .set_title() and set_xlabel()/set_ylabel() to change our titles and labels.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#adding-a-reference-line",
     "href": "03-annotating.html#adding-a-reference-line",
-    "title": "4  Annotating Your Plot",
-    "section": "4.8 Adding a Reference Line",
-    "text": "4.8 Adding a Reference Line\nAdding reference lines are a great way to focus people on different aspects of a graph:\n\nRPython\n\n\nUsing geom_hline() to show the average value across a time period can provide a useful reference for viewers:\n\n\n\n\n\n\n\n\n\n\nWe can add a horizontal reference line using plt.axhline():\n\n\n\n\n\n\n\n\n\n\n\n\nRPython\n\n\nWe can add a vertical reference line instead using geom_vline() (note the argument, xintercept is different than geom_hline()):\n\n\n\n\n\n\n\n\n\n\nIn Python, we can add a vertical reference line using plt.axvline():",
+    "title": "3  Annotating Your Plot",
+    "section": "3.8 Adding a Reference Line",
+    "text": "3.8 Adding a Reference Line\nAdding reference lines are a great way to focus people on different aspects of a graph:\n\nRPython\n\n\nUsing geom_hline() to show the average value across a time period can provide a useful reference for viewers:\n\n\n\n\n\n\n\n\n\n\nWe can add a horizontal reference line using plt.axhline():\n\n\n\n\n\n\n\n\n\n\n\n\nRPython\n\n\nWe can add a vertical reference line instead using geom_vline() (note the argument, xintercept is different than geom_hline()):\n\n\n\n\n\n\n\n\n\n\nIn Python, we can add a vertical reference line using plt.axvline():",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#adding-text-annotations",
     "href": "03-annotating.html#adding-text-annotations",
-    "title": "4  Annotating Your Plot",
-    "section": "4.9 Adding text annotations",
-    "text": "4.9 Adding text annotations\nAdding text annotations directly to the graph can be extremely helpful, especially if there are points of interest you want users to look at.\n\nRPython\n\n\n(For adding text information per data point, look at geom_text() and geom_repel() from the ggrepel package). The first argument to annotate() is “text”.\nIt takes x and y arguments to determine the position of our annotation. These values are dependent on the scale - since we have a numeric scale for both the x and y axes, we’ll use numbers to specify the position.\nOur actual text goes in the label argument.\nRun the code block below. Try adjusting the y argument for annotate() to get the annotation more centered around the mean reference line.\n\n\n\n\n\n\n\n\n\n\nWe can use plt.text() to add a text annotation to our plot.",
+    "title": "3  Annotating Your Plot",
+    "section": "3.9 Adding text annotations",
+    "text": "3.9 Adding text annotations\nAdding text annotations directly to the graph can be extremely helpful, especially if there are points of interest you want users to look at.\n\nRPython\n\n\n(For adding text information per data point, look at geom_text() and geom_repel() from the ggrepel package). The first argument to annotate() is “text”.\nIt takes x and y arguments to determine the position of our annotation. These values are dependent on the scale - since we have a numeric scale for both the x and y axes, we’ll use numbers to specify the position.\nOur actual text goes in the label argument.\nRun the code block below. Try adjusting the y argument for annotate() to get the annotation more centered around the mean reference line.\n\n\n\n\n\n\n\n\n\n\nWe can use plt.text() to add a text annotation to our plot.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#one-last-thing-changing-the-numbers-in-the-ticks-using-scale_x_continuous",
     "href": "03-annotating.html#one-last-thing-changing-the-numbers-in-the-ticks-using-scale_x_continuous",
-    "title": "4  Annotating Your Plot",
-    "section": "4.10 One last thing: changing the numbers in the ticks using scale_x_continuous()",
-    "text": "4.10 One last thing: changing the numbers in the ticks using scale_x_continuous()\nOne last thing that’s been bugging me - the values of the ticks in the Season Number axis.\n\nRPython\n\n\nWe can specify these numbers using the breaks argument. Note that c(1:10) is a shortcut for specifying c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).",
+    "title": "3  Annotating Your Plot",
+    "section": "3.10 One last thing: changing the numbers in the ticks using scale_x_continuous()",
+    "text": "3.10 One last thing: changing the numbers in the ticks using scale_x_continuous()\nOne last thing that’s been bugging me - the values of the ticks in the Season Number axis.\n\nRPython\n\n\nWe can specify these numbers using the breaks argument. Note that c(1:10) is a shortcut for specifying c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#part-3-your-turn",
     "href": "03-annotating.html#part-3-your-turn",
-    "title": "4  Annotating Your Plot",
-    "section": "4.11 Part 3: Your Turn",
-    "text": "4.11 Part 3: Your Turn\nExperiment with the following modifications to the graph. If you have time, cut and paste the modifications you decided on in part 2 to your graph.\nIf there’s a show that you want to highlight, try adding an annotation to highlight it. Or try adding an annotation at Roseanne’s lowest rating!\n\nRPython",
+    "title": "3  Annotating Your Plot",
+    "section": "3.11 Part 3: Your Turn",
+    "text": "3.11 Part 3: Your Turn\nExperiment with the following modifications to the graph. If you have time, cut and paste the modifications you decided on in part 2 to your graph.\nIf there’s a show that you want to highlight, try adding an annotation to highlight it. Or try adding an annotation at Roseanne’s lowest rating!\n\nRPython",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
     "objectID": "03-annotating.html#for-more-information",
     "href": "03-annotating.html#for-more-information",
-    "title": "4  Annotating Your Plot",
-    "section": "4.12 For more information",
-    "text": "4.12 For more information\nFor more examples of how annotating can make figures more clear, please check out Storytelling with Data: https://storytellingwithdata.com, especially the linegraphs with annotations for examples: http://www.storytellingwithdata.com/blog/2018/1/22/88-annotated-line-graphs\nMaking annotations first class citizens in data visualization: https://medium.com/@Elijah_Meeks/making-annotations-first-class-citizens-in-data-visualization-21db6383d3fe",
+    "title": "3  Annotating Your Plot",
+    "section": "3.12 For more information",
+    "text": "3.12 For more information\nFor more examples of how annotating can make figures more clear, please check out Storytelling with Data: https://storytellingwithdata.com, especially the linegraphs with annotations for examples: http://www.storytellingwithdata.com/blog/2018/1/22/88-annotated-line-graphs\nMaking annotations first class citizens in data visualization: https://medium.com/@Elijah_Meeks/making-annotations-first-class-citizens-in-data-visualization-21db6383d3fe",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Annotating Your Plot</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
   },
   {
@@ -557,26 +567,6 @@
     "text": "4.17 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#reminder",
-    "href": "index.html#reminder",
-    "title": "Better Plots",
-    "section": "Reminder",
-    "text": "Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
-    "crumbs": [
-      "Better Plots"
-    ]
-  },
-  {
-    "objectID": "01-setup.html#dressing-up-a-base-plot",
-    "href": "01-setup.html#dressing-up-a-base-plot",
-    "title": "1  Setting up Our plot",
-    "section": "1.4 Dressing Up a Base Plot",
-    "text": "1.4 Dressing Up a Base Plot\nWe’ll start with a base plot that we’ll dress up. Here’s what that looks like.\n\nRPython\n\n\nLet’s save our plot into an R object called a ggplot. We’ll use the &lt;- (left arrow) to assign it to the variable called my_plot:\n\n\n\n\n\n\n\n\n\n\nWe need a few packages for Python. We need the pandas, seaborn, and matplotlib packages.\nWe will start by making a plot object with sns.lineplot():",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   }
 ]
