@@ -364,7 +364,7 @@
     "href": "03-annotating.html#one-last-thing-changing-the-numbers-in-the-ticks-using-scale_x_continuous",
     "title": "3  Annotating Your Plot",
     "section": "3.10 One last thing: changing the numbers in the ticks using scale_x_continuous()",
-    "text": "3.10 One last thing: changing the numbers in the ticks using scale_x_continuous()\nOne last thing that’s been bugging me - the values of the ticks in the Season Number axis.\n\nRPython\n\n\nWe can specify these numbers using the breaks argument. Note that c(1:10) is a shortcut for specifying c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).",
+    "text": "3.10 One last thing: changing the numbers in the ticks using scale_x_continuous()\nOne last thing that’s been bugging me - the values of the ticks in the Season Number axis.\n\nRPython\n\n\nWe can specify these numbers using the breaks argument. Note that c(1:10) is a shortcut for specifying c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).\n\n\n\n\n\n\n\n\n\n\nFor Python, we can pass in a list that has the ticks we want to annotate:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
