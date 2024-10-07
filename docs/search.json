@@ -384,7 +384,7 @@
     "href": "02-decluttering.html",
     "title": "2  Decluttering Plots",
     "section": "",
-    "text": "2.1 Why do we need to declutter our graphs?",
+    "text": "2.1 Quick Reminder of our plots\nThis is the plot we’re going to start dressing up today.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -393,8 +393,8 @@
     "objectID": "02-decluttering.html#why-do-we-need-to-declutter-our-graphs",
     "href": "02-decluttering.html#why-do-we-need-to-declutter-our-graphs",
     "title": "2  Decluttering Plots",
-    "section": "",
-    "text": "Reduce cognitive load (help tired and cranky viewers)\nViewer can focus on what matters\nNot all information is useful for your viewer",
+    "section": "2.2 Why do we need to declutter our graphs?",
+    "text": "2.2 Why do we need to declutter our graphs?\n\nReduce cognitive load (help tired and cranky viewers)\nViewer can focus on what matters\nNot all information is useful for your viewer",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -403,8 +403,8 @@
     "objectID": "02-decluttering.html#example-london-subway-diagram",
     "href": "02-decluttering.html#example-london-subway-diagram",
     "title": "2  Decluttering Plots",
-    "section": "2.2 Example: London Subway Diagram",
-    "text": "2.2 Example: London Subway Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\nTriumph of minimal design\nRemoves geography\nEmphasizes: what lines to I take to get from A to B?\n\n\n\nhttp://theconversation.com/sublime-design-the-london-underground-map-26240",
+    "section": "2.3 Example: London Subway Diagram",
+    "text": "2.3 Example: London Subway Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\nTriumph of minimal design\nRemoves geography\nEmphasizes: what lines to I take to get from A to B?\n\n\n\nhttp://theconversation.com/sublime-design-the-london-underground-map-26240",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -413,8 +413,8 @@
     "objectID": "02-decluttering.html#cognitive-load",
     "href": "02-decluttering.html#cognitive-load",
     "title": "2  Decluttering Plots",
-    "section": "2.3 Cognitive Load",
-    "text": "2.3 Cognitive Load\n\nThink of your audience:\n\nTired and cranky and want you to get to the point!\nShort term memory 5 +/- 2 things at once\n\nRemove elements that distract from your message\n\nShadows, 3D Effects\nLegends/too many colors\nAxis Titles (sometimes)",
+    "section": "2.4 Cognitive Load",
+    "text": "2.4 Cognitive Load\n\nThink of your audience:\n\nTired and cranky and want you to get to the point!\nShort term memory 5 +/- 2 things at once\n\nRemove elements that distract from your message\n\nShadows, 3D Effects\nLegends/too many colors\nAxis Titles (sometimes)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -423,8 +423,8 @@
     "objectID": "02-decluttering.html#ask-yourself",
     "href": "02-decluttering.html#ask-yourself",
     "title": "2  Decluttering Plots",
-    "section": "2.4 Ask Yourself",
-    "text": "2.4 Ask Yourself\n\nknitr::include_graphics(\"image/before-after.png\")",
+    "section": "2.5 Ask Yourself",
+    "text": "2.5 Ask Yourself\n\nknitr::include_graphics(\"image/before-after.png\")",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -433,8 +433,8 @@
     "objectID": "02-decluttering.html#theming",
     "href": "02-decluttering.html#theming",
     "title": "2  Decluttering Plots",
-    "section": "2.5 Theming",
-    "text": "2.5 Theming\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.",
+    "section": "2.6 Theming",
+    "text": "2.6 Theming\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -443,8 +443,8 @@
     "objectID": "02-decluttering.html#removing-stuff",
     "href": "02-decluttering.html#removing-stuff",
     "title": "2  Decluttering Plots",
-    "section": "2.6 Removing Stuff",
-    "text": "2.6 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss on slack:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
+    "section": "2.7 Removing Stuff",
+    "text": "2.7 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss on slack:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -453,8 +453,8 @@
     "objectID": "02-decluttering.html#one-note",
     "href": "02-decluttering.html#one-note",
     "title": "2  Decluttering Plots",
-    "section": "2.7 One note",
-    "text": "2.7 One note\nIn each section, we’re trying different types of modification, so they’re not cumulative. However, you can cut and paste the modifications together in the end to have your final customized plot.",
+    "section": "2.8 One note",
+    "text": "2.8 One note\nIn each section, we’re trying different types of modification, so they’re not cumulative. However, you can cut and paste the modifications together in the end to have your final customized plot.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -463,8 +463,8 @@
     "objectID": "02-decluttering.html#intelligent-defaults-using-built-in-themes",
     "href": "02-decluttering.html#intelligent-defaults-using-built-in-themes",
     "title": "2  Decluttering Plots",
-    "section": "2.8 Intelligent Defaults: Using Built in Themes",
-    "text": "2.8 Intelligent Defaults: Using Built in Themes\nA lot of the simplification can come from built in themes. Themes are like a full wardrobe for our paper dolls, specifying lots of different details.\n\nRPython\n\n\nAdding theme_minimal() will remove a lot of the background elements. Try it out and compare it with the above plot.\nBuilt in themes let you be more efficient in paring elements down, but you will often find that you need to customize them. That’s what we’ll look at next.\n\n\n\n\n\n\n\n\n\n\nSeaborn lets you set a style using .set_style(). There are number of built in defaults:\n\nwhite\ndark\nwhitegrid\ndarkgrid\nticks",
+    "section": "2.9 Intelligent Defaults: Using Built in Themes",
+    "text": "2.9 Intelligent Defaults: Using Built in Themes\nA lot of the simplification can come from built in themes. Themes are like a full wardrobe for our paper dolls, specifying lots of different details.\n\nRPython\n\n\nAdding theme_minimal() will remove a lot of the background elements. Try it out and compare it with the above plot.\nBuilt in themes let you be more efficient in paring elements down, but you will often find that you need to customize them. That’s what we’ll look at next.\n\n\n\n\n\n\n\n\n\n\nSeaborn lets you set a style using .set_style(). There are number of built in defaults:\n\nwhite\ndark\nwhitegrid\ndarkgrid\nticks",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -483,8 +483,8 @@
     "objectID": "02-decluttering.html#remove-some-text",
     "href": "02-decluttering.html#remove-some-text",
     "title": "2  Decluttering Plots",
-    "section": "2.10 Remove some Text",
-    "text": "2.10 Remove some Text\nLet’s try simplifying our plot by removing the x-axis text. By context, the label seasonNumber isn’t that helpful.\n\nRPython",
+    "section": "2.11 Remove some Text",
+    "text": "2.11 Remove some Text\nLet’s try simplifying our plot by removing the x-axis text. By context, the label seasonNumber isn’t that helpful.\n\nRPython",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -493,8 +493,8 @@
     "objectID": "02-decluttering.html#remove-the-gridlines",
     "href": "02-decluttering.html#remove-the-gridlines",
     "title": "2  Decluttering Plots",
-    "section": "2.11 Remove the Gridlines",
-    "text": "2.11 Remove the Gridlines\nTry removing the gridlines. Is that helpful or not?\n\nRPython",
+    "section": "2.12 Remove the Gridlines",
+    "text": "2.12 Remove the Gridlines\nTry removing the gridlines. Is that helpful or not?\n\nRPython",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -503,8 +503,8 @@
     "objectID": "02-decluttering.html#remove-the-legend",
     "href": "02-decluttering.html#remove-the-legend",
     "title": "2  Decluttering Plots",
-    "section": "2.12 Remove the Legend",
-    "text": "2.12 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
+    "section": "2.13 Remove the Legend",
+    "text": "2.13 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -513,8 +513,8 @@
     "objectID": "02-decluttering.html#your-turn",
     "href": "02-decluttering.html#your-turn",
     "title": "2  Decluttering Plots",
-    "section": "2.13 Your turn",
-    "text": "2.13 Your turn\n\nRPython\n\n\nPlay with different combinations of these different theme() statements to customize your plot. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.\n\n\n\n\n\n\n\n\n\n\nPlay around with different combinations of decluttering here. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.",
+    "section": "2.14 Your turn",
+    "text": "2.14 Your turn\n\nRPython\n\n\nPlay with different combinations of these different theme() statements to customize your plot. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.\n\n\n\n\n\n\n\n\n\n\nPlay around with different combinations of decluttering here. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -523,8 +523,8 @@
     "objectID": "02-decluttering.html#for-more-information",
     "href": "02-decluttering.html#for-more-information",
     "title": "2  Decluttering Plots",
-    "section": "2.14 For more information",
-    "text": "2.14 For more information\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)",
+    "section": "2.15 For more information",
+    "text": "2.15 For more information\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -853,8 +853,8 @@
     "objectID": "02-decluttering.html#removing-elements",
     "href": "02-decluttering.html#removing-elements",
     "title": "2  Decluttering Plots",
-    "section": "2.9 Removing elements",
-    "text": "2.9 Removing elements\nWe can customize our plot even further by adding a theme() function to the end of our plot. We’ll use this to remove individual elements from the plot.\nNote: If we change any theme attributes after calling theme_minimal(), it will basically overwrite the previous built-in theme. This means that order is important, so keep that in mind!\ntheme() looks very intimidating, because it has lots of different arguments. We’ll only look at a few of these:\n\naxis.title, axis.title.x and axis.title.y (The labels for the axes)\npanel.grid (grid lines)\nlegend.position (Placing the legend, including removing it)\n\nHow will we remove these elements? For most of them, we will specify an element called element_blank() to these arguments. What is this? Think of it as a special placeholder that says we don’t want to see this element.",
+    "section": "2.10 Removing elements",
+    "text": "2.10 Removing elements\nWe can customize our plot even further by adding a theme() function to the end of our plot. We’ll use this to remove individual elements from the plot.\nNote: If we change any theme attributes after calling theme_minimal(), it will basically overwrite the previous built-in theme. This means that order is important, so keep that in mind!\ntheme() looks very intimidating, because it has lots of different arguments. We’ll only look at a few of these:\n\naxis.title, axis.title.x and axis.title.y (The labels for the axes)\npanel.grid (grid lines)\nlegend.position (Placing the legend, including removing it)\n\nHow will we remove these elements? For most of them, we will specify an element called element_blank() to these arguments. What is this? Think of it as a special placeholder that says we don’t want to see this element.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -877,6 +877,26 @@
     "text": "4.7 Python",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-this-workshop-works",
+    "href": "index.html#how-this-workshop-works",
+    "title": "Better Plots",
+    "section": "How This Workshop Works",
+    "text": "How This Workshop Works\nThere are two separate tabs for each demo - an R one and a Python one. Pick your path. Both of them are loaded into the web browser, so feel free to switch between them to try out different approaches.\n\nFor R users, we will be using the ggplot2 package\nFor Python Users, we will be using the seaborn package.\n\nThe play button on the right of a code window lets you execute that code.\nNote that there are two levels of setting options for Python code: the seaborn level and the matplotlib level, because seaborn is an extension of matplotlib. seaborn options look like this:\nmy_plot.set_xlabel(\"Python Rules\")\nVersus the matplotlib level, which looks like this:\nplt.show()\nBecause this is not JupyterLab, note that we always have to end our statements with plt.show() to show the plot.",
+    "crumbs": [
+      "Better Plots"
+    ]
+  },
+  {
+    "objectID": "02-decluttering.html#quick-reminder-of-our-plots",
+    "href": "02-decluttering.html#quick-reminder-of-our-plots",
+    "title": "2  Decluttering Plots",
+    "section": "",
+    "text": "RPython",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   }
 ]
