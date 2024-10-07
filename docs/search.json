@@ -234,7 +234,7 @@
     "href": "02-decluttering.html#remove-the-legend",
     "title": "2  Decluttering Plots",
     "section": "2.13 Remove the Legend",
-    "text": "2.13 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
+    "text": "2.13 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\n\n\n\n\n\n\n\n\n\n\nWe can remove the legend using .legend_.remove():\n\n\n\n\n\n\n\n\n\n\n\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
