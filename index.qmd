@@ -1,0 +1,77 @@
+# Better Plots {.unnumbered}
+
+---
+title: "Better Plots"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - seaborn
+    - pandas
+#    - matplotlib
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Overview
+
+- Part 1: Getting Started
+- Part 2: Decluttering
+- Part 3: Annotating
+- Part 4: Highlighting
+
+## Reminder
+
+This workshop adheres to the DaSL Learning Community Participation Guidelines:
+
+[Participation Guidelines](https://hutchdatascience.org/communitystudios/guidelines/)
+
+Please be respectful of your fellow learners and help each other learn.
+
+Remember, it's dangerous to learn alone! So partner up with someone, it's fun to learn together.
+
+
+## Overview of Data
+
+We're going to be using a TV Show dataset.
+
+::::{.panel-tabset class="language"}
+
+## R
+
+```{webr}
+library(ggplot2)
+library(dplyr)
+tv_shows <- read.csv("data/tv_shows.csv")
+tv_shows
+```
+
+## Python
+
+```{pyodide}
+import pandas as pd
+
+tv_shows = pd.read_csv("data/tv_shows.csv")
+tv_shows
+```
+
+::::
+
+
+
+

@@ -1,0 +1,290 @@
+---
+title: "Highlighting Your Plots"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - seaborn
+    - pandas
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+```{webr}
+#| autorun: true
+#| echo: false
+library(ggplot2)
+library(dplyr)
+tv_shows <- read.csv("data/tv_shows.csv")
+```
+
+```{pyodide}
+#| autorun: true
+#| echo: false
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+tv_shows = pd.read_csv("data/tv_shows.csv")
+```
+
+## Preattentive attributes
+
+::::{.columns}
+:::{.column}
+Color and contrast are known as `preattentive attributes`. Our unconscious brain is aware of these kinds of attributes even before we consciously process the content of a graph.
+
+How many 3s are there in this image?
+:::
+
+:::{.column}
+```{r echo=FALSE}
+knitr::include_graphics("image/threes-grey.png")
+```
+:::
+::::
+
+[Storytelling with Data](http://storytellingwithdata.com/)
+
+## How about now?
+
+::::{.columns}
+:::{.column}
+You can use color and contrast to highlight aspects of the data. How many 3s are there in this image now? Notice how much quicker you can count them. 
+
+That's the power of preattentive attributes!
+:::
+
+:::{.column}
+```{r echo=FALSE}
+knitr::include_graphics("image/threes.png")
+```
+:::
+::::
+
+[Storytelling with Data](http://storytellingwithdata.com/)
+
+## Best Practices for Using Color (Stephen Few)
+
+- Use color only when needed to serve a particular communication goal
+- Use different colors only when they correspond to differences of meaning in the data.
+- Use soft, natural colors to display most information and bright and/or dark colors to highlight information that requires greater attention.
+
+[Practical Rules for Using Color](http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf)
+
+## Changing the base plot (slightly)
+
+Remember our original plot mapped color to `title`. There's also a variable called `status` in our data. `status` has two different values: a tv show can be a `riser` (positive trend in ratings), or be a `faller` (negative trend in ratings).
+
+Let's modify the plot to use this variable to `color` our lines. We'll save it as a different object, this time called `my_new_plot`.
+
+::::{.panel-tabset group="language"}
+## R
+
+In R, we map `color` to `status`, and `group` to `title` 
+
+```{webr}
+my_new_plot <- 
+  ggplot(tv_shows) + 
+    aes(x = seasonNumber, 
+        y= av_rating, 
+        group=title, 
+        color = status) +   #changing `color` to map to `status` here
+    geom_line()
+
+my_new_plot
+```
+
+## Python
+
+In Python, we map `hue` to `status`, and `units` to `title`:
+
+```{pyodide}
+my_new_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="status",
+                 units="title",
+                 estimator=None)
+
+plt.show()
+```
+::::
+
+## Highlighting part of your data
+
+What if we only want to highlight one group in the data? In this case, maybe we want to highlight the *risers* in our dataset. If we color them blue, and leave the others as `grey` we can immediately highlight them as important and worth noticing in the context of the other data.
+
+::::{.panelset-tabset group="language"}
+## R
+
+We can actually manually color our traces by using `scale_color_manual()`. This lets us manually map our values in our variable (`riser` and `faller`) to colors: (`blue` and `grey`).
+
+If you've mapped a variable to `fill`, you'll have to use `scale_fill_manual()` to map values to colors.
+
+```{webr}
+my_new_plot + 
+  scale_color_manual(values=c("riser"="blue",
+                              "faller"="lightgrey")) +
+  theme_minimal()
+```
+
+## Python
+
+```{pyodide}
+my_new_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="status",
+                 units="title",
+                 estimator=None,
+                 palette=["blue", "lightgrey"])
+
+plt.show()
+```
+::::
+
+### Try out mapping colors
+
+Try using different colors to contrast the lines in the `values` argument to `scale_color_manual()`. A small list of color names in R can be found here: <https://www.r-graph-gallery.com/42-colors-names.html>
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+my_new_plot + 
+  scale_color_manual(values=c("riser"="blue", "faller"="lightgrey"))
+```
+
+## Python
+
+```{pyodide}
+my_new_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="status",
+                 units="title",
+                 estimator=None,
+                 palette=["blue", "lightgrey"])
+
+plt.show()
+```
+::::
+
+## Put it all together!
+
+Cut and paste all your modifiers and make your final figure below!
+
+::::{.panel-tabset group="language"}
+
+## R
+
+If you leave out a line with a `#`, make sure that there is no `+` on your last real line.
+
+```{webr}
+my_new_plot +
+  theme_minimal() +
+  #theme(axis.title.x = element_blank()) + 
+  #theme(panel.grid = element_blank()) + 
+  #theme(legend.position = "none") +
+#labs(title = "Is it better to burn out than fade away?",x="Season Number", y="Average Rating") + 
+#  geom_vline(xintercept = 5, lty=3) +
+#  annotate(geom="text", x = 7, y=8.5, label = "The Walking\n Dead (brainzzz)") +
+#  scale_x_continuous(breaks = c(1:10))
+
+```
+
+## Python
+
+```{pyodide}
+#sns.set_style("white")
+my_new_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="status",
+                 units="title",
+                 estimator=None,
+                 palette=["blue", "lightgrey"])
+
+#my_new_plot.set_xlabel("")
+#my_new_plot.legend_.remove()
+#my_new_plot.set_title("Is it better to burn out than fade away?", fontsize=20)
+#my_new_plot.set_xlabel ("Season Number", fontsize=15)
+#my_new_plot.set_ylabel ("Average Rating", fontsize=15)
+#my_new_plot.set_xticks([0,1,2,3,4,5,6,7,8,9,10])
+#plt.axhline(y=7.8, linestyle="--")
+#plt.text(x=7, y=8.5, s="The Walking\n Dead (brainzzz)")
+plt.show()
+```
+::::
+
+## More Best Practices for figures:
+
+Ten Simple Rules for Better Figures: <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833>
+
+
+## More tips and tricks for using contrast and color
+
+In `03-annotating`, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.
+
+Shapes for points can also be helpful for highlighting particular data points. Here's a useful reference.
+
+More information here:
+http://www.cookbook-r.com/Graphs/Shapes_and_line_types/
+
+## Conclusions
+
+Congrats! You're well on your way to learning how to make your figures more accessible.
+
+
+## Putting it all Together
+
+
+```{r echo=FALSE}
+knitr::include_graphics("image/David_H.png")
+```
+<https://t.co/KSGQzaH0Mh>
+
+## Going Farther
+
+## `ggplot2` flipbook
+
+Good examples for styling your plots!
+
+https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html
+
+- [Arctic Ice](https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#226)
+- [Flipping Seats](https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#302)
+- [Milk Cows](https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#354)
+
+## Please fill out our survey!
+
+
+
+## References
+
+- [Storytelling with Data](http://www.storytellingwithdata.com/books)
+- [Happy Days Jumping the Shark (Tableau Link)](https://t.co/KSGQzaH0Mh)
+- [`ggplot2` flipbook](https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html)
+- [Alison Hill: Take a Sad Plot and Make it Better](https://alison.rbind.io/talk/2018-ohsu-sad-plot-better/)
+
+
+## Keep in Touch
+
+- tladera2 at fredhutch.org <br>
+- https://laderast.github.io <br>
+- [tladeras](https://vmst.io/@tladeras)

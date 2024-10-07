@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Better Plots"
+  author: "Ted Laderas"
+  date: "10/3/2024"
+  chapters:
+    - index.qmd
+    - 01-setup.qmd
+    - 02-decluttering.qmd
+    - 03-annotating.qmd
+    - 04-highlighting.qmd
+
+bibliography: references.bib
+
+format:
+  live-html:
+    theme: cosmo
+
+
+

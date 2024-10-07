@@ -1,0 +1,305 @@
+---
+title: "Decluttering Plots"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - seaborn
+    - pandas
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+```{webr}
+#| echo: false
+library(ggplot2)
+library(dplyr)
+
+tv_shows <- read.csv("data/tv_shows.csv")
+
+my_plot <- 
+  ggplot(tv_shows) + 
+  aes(x = seasonNumber, y= av_rating, group=title, 
+      color = title) + 
+  geom_line()
+
+my_plot
+```
+
+```{pyodide}
+#| echo: false
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+tv_shows = pd.read_csv("data/tv_shows.csv")
+
+sns.set_theme()
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+
+plt.show()
+```
+
+
+## Why do we need to declutter our graphs?
+
+- Reduce cognitive load (help tired and cranky viewers)
+- Viewer can focus on what matters
+- Not all information is useful for your viewer
+
+
+## Example: London Subway Diagram
+
+::::{.columns}
+:::{.column}
+```{r echo = FALSE}
+knitr::include_graphics("image/london-underground.jpg")
+```
+:::
+
+:::{.column}
+- Triumph of minimal design
+- Removes geography
+- Emphasizes: what lines to I take to get from A to B?
+:::
+::::
+
+<http://theconversation.com/sublime-design-the-london-underground-map-26240>
+
+
+## Cognitive Load
+
+- Think of your audience: 
+    - Tired and cranky and want you to get to the point!
+    - Short term memory 5 +/- 2 things at once
+- Remove elements that distract from your message
+    - Shadows, 3D Effects
+    - Legends/too many colors 
+    - Axis Titles (sometimes)
+
+
+## Ask Yourself
+
+```{r}
+knitr::include_graphics("image/before-after.png")
+```
+
+## Theming
+
+The neat thing about `ggplot2` is that you can modify the plot code by adding *modifiers* with the `+` (plus) sign. 
+
+We're going to take a "paper doll" approach to our plot to modifying it - each *modifier* can be thought of as a set of "clothes" that we dress our plot in. 
+
+## Removing Stuff
+
+The defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.
+
+Before you move on, discuss on slack:
+
+1) What parts of the plot are distracting from your message about tv shows that are `risers`?
+
+## One note
+
+In each section, we're trying different types of modification, so they're not cumulative. However, you can cut and paste the modifications together in the end to have your final customized plot.
+
+## Intelligent Defaults: Using Built in Themes
+
+A lot of the simplification can come from built in themes. Themes are like a full wardrobe for our paper dolls, specifying lots of different details.  
+
+::::{.panel-tabset group="language"}
+## R
+
+Adding `theme_minimal()` will remove a lot of the background elements. Try it out and compare it with the above plot.
+
+Built in themes let you be more efficient in paring elements down, but you will often find that you need to customize them. That's what we'll look at next.
+
+```{webr}
+#| autorun: false
+my_plot + theme_minimal()
+```
+
+## Python
+
+Seaborn lets you set a **style** using `.set_style()`. There are number of built in defaults: 
+
+- `white`
+- `dark`
+- `whitegrid`
+- `darkgrid`
+- `ticks`
+
+```{pyodide}
+#| autorun: false
+sns.set_theme()
+sns.set_style("whitegrid")
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+plt.show()
+```
+::::
+
+
+
+## Removing elements
+
+We can customize our plot even further by adding a `theme()` function to the end of our plot. We'll use this to remove individual elements from the plot. 
+
+Note: If we change any theme attributes after calling `theme_minimal()`, it will basically *overwrite* the previous built-in theme. This means that order is important, so keep that in mind!
+
+`theme()` looks very intimidating, because it has lots of different arguments. We'll only look at a few of these:
+
+- `axis.title`, `axis.title.x` and `axis.title.y` (The labels for the axes)
+- `panel.grid` (grid lines)
+- `legend.position` (Placing the legend, including removing it)
+
+How will we remove these elements? For most of them, we will specify an element called `element_blank()` to these arguments. What is this? Think of it as a special placeholder that says we don't want to see this element.
+
+## Remove some Text
+
+Let's try simplifying our plot by removing the x-axis text. By context, the label `seasonNumber` isn't that helpful.
+
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+my_plot + 
+  theme(axis.title.x = element_blank())
+```
+
+## Python
+
+```{pyodide}
+sns.set_theme()
+sns.set_style("whitegrid")
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+ax.set_xlabel("")
+
+plt.show()
+```
+::::
+
+## Remove the Gridlines
+
+Try removing the gridlines. Is that helpful or not?
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+my_plot + 
+  theme(panel.grid = element_blank())
+
+```
+
+## Python
+
+```{pyodide}
+sns.set_theme()
+sns.set_style("white")
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+
+plt.show()
+```
+::::
+
+
+## Remove the Legend
+
+::::{.panel-tabset group="language"}
+## R
+
+Sometimes, to remove some items, like the legend, you have to specify it not as `element_blank`, but as "none". Try removing the legend. 
+
+Hmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.
+
+
+```{webr}
+my_plot + 
+  theme(legend.position = "none")
+```
+
+## Python
+
+```{pyodide}
+sns.set_theme()
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+ax.legend_.remove()
+plt.show()
+```
+::::
+
+
+## Your turn
+
+::::{.panel-tabset group="language"}
+## R
+
+Play with different combinations of these different `theme()` statements to customize your plot. If you want to remove a line, you can put a `#` in front of that line. That will make it a comment and that line of code won't run.
+
+```{webr}
+my_plot +
+  theme_minimal() + 
+  #theme(axis.title.x = element_blank()) + 
+  #theme(panel.grid = element_blank()) + 
+  theme(legend.position = "none")
+```
+
+## Python
+
+Play around with different combinations of decluttering here. If you want to remove a line, you can put a `#` in front of that line. That will make it a comment and that line of code won't run.
+
+```{pyodide}
+sns.set_theme()
+#sns.set_style("white")
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+#ax.set_xlabel("")
+#ax.legend_.remove()
+plt.show()
+```
+::::
+
+## For more information
+
+Take a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.
+
+https://www.datanovia.com/en/blog/ggplot-themes-gallery/
+
+Look at the documentation for `theme()` to understand how to customize different elements. Each element maps to four different elements:
+
+`element_blank()` - we've seen this.
+`element_text()` - anything that's text (such as labels - this is where you can specify arguments like `angle`,`size`)
+`element_rect()` - anything that's a rectangle (such as the panel)
+`element_line()` - anything that's a line (such as axes and grid lines)

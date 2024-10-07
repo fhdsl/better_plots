@@ -1,0 +1,137 @@
+---
+title: "Setting up Our plot"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+resources:
+    - data
+format: 
+  live-html:
+    scrollable: true
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  packages:
+    - seaborn
+    - pandas
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Motivation: Exploratory versus Explanatory
+
+::::{.columns}
+
+:::{.column}
+**Exploratory analysis**: 
+  
+  - exploring and understanding the data, conducting the analysis
+:::
+
+:::{.column}
+**Explanatory analysis**: 
+  
+  - explaining your findings from your analysis in a coherent narrative that leads to a call to action
+:::
+
+::::
+
+
+## Effective Visual Communication
+
+Focus on three techniques:
+
+- Decluttering your plot
+- Annotating your graph and data
+- Highlight data using Preattentive Attributes
+
+
+## Paper Doll Approach
+
+::::{.columns}
+:::{.column}
+- We're going to take a basic plot and dress it up
+- Modify its appearance to make our point more understandable and immediate
+:::
+
+:::{.column}
+```{r echo=FALSE}
+knitr::include_graphics("image/giphy.gif")
+```
+:::
+
+::::
+
+## Assigning our plot so we can reuse it (3 min).
+
+Let's save our plot into an R object called a ggplot. We'll use the `<-` (left arrow) to assign it to the variable called `my_plot`:
+
+:::{.panel-tabset group="language"}
+
+## R
+
+```{webr}
+
+library(ggplot2)
+library(dplyr)
+
+tv_shows <- read.csv("data/tv_shows.csv")
+
+my_plot <- 
+  ggplot(tv_shows) + 
+  aes(x = seasonNumber, y= av_rating, group=title, 
+      color = title) + 
+  geom_line()
+
+my_plot
+```
+
+## Python
+
+```{pyodide}
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+tv_shows = pd.read_csv("data/tv_shows.csv")
+
+sns.set_theme()
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+
+plt.show()
+```
+:::
+
+## Dressing up `my_plot`
+
+Now, when we want to modify our plot, we can use `my_plot`. More on this in the next notebook. We're basically going to add commands to modify our plot. I like to think of it as a `paper doll` approach: we are dressing our plot in different clothes.
+
+::::{.panel-tabset group="language"}
+
+## R
+
+```{webr}
+my_plot
+```
+
+## Python
+
+```{pyodide}
+sns.set_theme()
+ax = sns.lineplot(data=tv_shows,
+                  x="seasonNumber",
+                  y="av_rating",
+                  hue="title")
+
+plt.show()
+```

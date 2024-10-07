@@ -1,0 +1,305 @@
+---
+title: "Annotating Your Plot"
+subtitle: "Data4All"
+author: "Ted Laderas, PhD"
+format: 
+  live-html:
+    scrollable: true
+engine: knitr
+webr:
+  render-df: paged-table
+  packages:
+    - ggplot2
+    - dplyr
+    - DT
+  resources:
+    - data
+pyodide:
+  render-df: paged-table
+  resources:
+    - data
+  packages:
+    - seaborn
+    - pandas
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Learning Objectives
+
+- Learn about how annotations can help your viewer
+- Modify titles using `labs()`
+- Adding reference lines
+- Annotating directly onto the graph
+- Changing the scale
+
+
+
+```{webr}
+#| autorun: true
+#| echo: false
+library(ggplot2)
+library(dplyr)
+tv_shows <- read.csv("data/tv_shows.csv")
+my_plot <- 
+  ggplot(tv_shows) + 
+  aes(x = seasonNumber, y= av_rating, group=title, 
+      color = title) + 
+  geom_line()
+```
+
+```{pyodide}
+#| autorun: true
+#| echo: false
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+tv_shows = pd.read_csv("data/tv_shows.csv")
+sns.set_theme()
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+
+```
+
+
+
+## Guiding Your Viewer 
+
+Another way we can guide people through our visualization is by using **annotations**, which can be very helpful in guiding someone through our figure. Let's review some best practices.
+
+
+## Use your titles/captions!
+
+- Titles can guide people to the point of your figure
+- Primes people to know what to look for
+- "If there is a conclusion you want your audience to reach, state it in words" - Cole Nussbaum Knaflic
+
+## Don't label everything
+
+::::{.columns}
+:::{.column} 
+
+- Think about only labeling the data that matters
+- If you want someone to compare two shows, label them
+- Think about groupings and "super categories" to help your viewers make sense of the graph]
+:::
+
+:::{.column}
+```{r echo=FALSE}
+knitr::include_graphics("image/super-category.png")
+```
+:::
+::::
+
+## Social Media Preference Example
+
+```{r echo=FALSE, fig.height=5}
+knitr::include_graphics("image/Colin.png")
+```
+
+<https://datawoj.co.uk/visualising-data-on-which-social-media-network-us-teenagers-prefer/>
+
+
+
+## Before you move on, discuss: 
+
+What TV Show do you want to highlight with text? Why is it interesting to you? Is there a trend you want to highlight?
+
+
+## Changing Titles
+
+There is a function called `labs()` that will let you change the titles for a graph. Figure out where these titles are added to the graph below.
+
+::::{.panel-tabset class="language"}
+
+## R
+
+```{webr}
+my_plot +
+  labs(title = "Is it better to burn out than fade away?",
+       x="Season Number", 
+       y="Average Rating")
+```
+
+Why is `labs()` not part of `theme()`? This is one confusing thing about `ggplot2`. `theme()` is about the *appearance* (position, angle, font size) of an element, whereas the `labs()` function actually provides the *content*.
+
+## Python
+
+We can use the `.set_title()` and `set_xlabel()`/`set_ylabel()` to change our titles and labels.
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+
+my_plot.set_title("Is it better to burn out than fade away?", fontsize=20)
+my_plot.set_xlabel ("Season Number", fontsize=15)
+my_plot.set_ylabel ("Average Rating", fontsize=15)
+plt.show()
+```
+
+::::
+
+## Adding a Reference Line
+
+Adding reference lines are a great way to focus people on different aspects of a graph:
+
+::::{.panel-tabset group="language"}
+## R
+
+Using `geom_hline()` to show the average value across a time period can provide a useful reference for viewers:
+
+```{webr}
+my_plot + 
+  geom_hline(yintercept = 7.8, lty=3)
+```
+
+## Python
+
+We can add a horizontal reference line using `plt.axhline()`: 
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+plt.axhline(y=7.8, linestyle="--")
+plt.show()
+```
+::::
+
+
+::::{.panel-tabset group="language"}
+## R
+
+We can add a vertical reference line instead using `geom_vline()` (note the argument, `xintercept` is different than `geom_hline()`):
+
+```{webr}
+my_plot + 
+  geom_vline(xintercept = 5, lty=3)
+```
+
+## Python
+
+In Python, we can add a vertical reference line using `plt.axvline()`:
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+plt.axvline(x=5, linestyle="--")
+plt.show()
+```
+::::
+
+## Adding text annotations
+
+Adding text annotations directly to the graph can be extremely helpful, especially if there are points of interest you want users to look at. 
+
+::::{.panel-tabset group="language"}
+## R
+
+(For adding text information per data point, look at `geom_text()` and `geom_repel()` from the `ggrepel` package). The first argument to `annotate()` is "text". 
+
+It takes `x` and `y` arguments to determine the position of our annotation. These values are dependent on the scale - since we have a numeric scale for both the `x` and `y` axes, we'll use numbers to specify the position.
+
+Our actual text goes in the `label` argument. 
+
+Run the code block below. Try adjusting the `y` argument for `annotate()` to get the annotation more centered around the mean reference line. 
+
+```{webr}
+my_plot + 
+  geom_hline(yintercept = 7.8, lty=3) +
+  annotate(geom="text", x = 2, y=10 , label="Mean Rating") 
+```
+
+## Python
+
+We can use `plt.text()` to add a text annotation to our plot.
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+plt.text(x=2, y=10, s="Mean Rating")
+plt.axhline(y=7.8)
+plt.show()
+```
+::::
+
+## One last thing: changing the numbers in the ticks using `scale_x_continuous()`
+
+One last thing that's been bugging me - the values of the ticks in the `Season Number` axis. 
+
+::::{.panel-tabset group="language"}
+## R
+
+We can specify these numbers using the `breaks` argument. Note that `c(1:10)` is a shortcut for specifying `c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)`.
+
+```{webr}
+my_plot + 
+  scale_x_continuous(breaks = c(1:10))
+```
+
+## Python
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+my_plot.set_xticks([0,1,2,3,4,5,6,7,8,9,10])
+plt.show()
+```
+::::
+
+
+## Part 3: Your Turn
+
+Experiment with the following modifications to the graph. If you have time, cut and paste the modifications you decided on in part 2 to your graph.
+
+If there's a show that you want to highlight, try adding an annotation to highlight it. Or try adding an annotation at `Roseanne`'s lowest rating!
+
+::::{.panel-tabset group="language"}
+## R
+
+```{webr}
+my_plot + 
+    labs(title = "Is it better to burn out than fade away?",x="Season Number", y="Average Rating") + 
+  geom_vline(xintercept = 5, lty=3) +
+  annotate(geom="text", x = 7, y=8.5, label = "The Walking\n Dead (brainzzz)") +
+  scale_x_continuous(breaks = c(1:10))
+
+```
+
+## Python
+
+```{pyodide}
+my_plot = sns.lineplot(data=tv_shows,
+                 x="seasonNumber",
+                 y="av_rating",
+                 hue="title")
+
+
+#my_plot.set_title("Is it better to burn out than fade away?", fontsize=20)
+#my_plot.set_xlabel ("Season Number", fontsize=15)
+#my_plot.set_ylabel ("Average Rating", fontsize=15)
+#my_plot.set_xticks([0,1,2,3,4,5,6,7,8,9,10])
+#plt.axhline(y=7.8, linestyle="--")
+#plt.text(x=7, y=8.5, s="The Walking\n Dead (brainzzz)")
+plt.show()
+```
+::::
+
+## For more information
+
+For more examples of how annotating can make figures more clear, please check out Storytelling with Data: https://storytellingwithdata.com, especially the linegraphs with annotations for examples: http://www.storytellingwithdata.com/blog/2018/1/22/88-annotated-line-graphs
+
+Making annotations first class citizens in data visualization: <https://medium.com/@Elijah_Meeks/making-annotations-first-class-citizens-in-data-visualization-21db6383d3fe>
+
+
