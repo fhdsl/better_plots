@@ -4,29 +4,29 @@
     "href": "index.html",
     "title": "Better Plots",
     "section": "",
-    "text": "Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
+    "text": "Better Plots",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better Plots</span>"
+      "Better Plots"
     ]
   },
   {
     "objectID": "index.html#how-this-workshop-works",
     "href": "index.html#how-this-workshop-works",
     "title": "Better Plots",
-    "section": "0.1 How This Workshop Works",
-    "text": "0.1 How This Workshop Works\nThere are two separate tabs for each demo - an R one and a Python one. Pick your path. Both of them are loaded into the web browser, so feel free to switch between them to try out different approaches.\n\nFor R users, we will be using the ggplot2 package\nFor Python Users, we will be using the seaborn package.\n\nThe play button on the right of a code window lets you execute that code.\nNote that there are two levels of setting options for Python code: the seaborn level and the matplotlib level, because seaborn is an extension of matplotlib. seaborn options look like this:\nmy_plot.set_xlabel(\"Python Rules\")\nVersus the matplotlib level, which looks like this:\nplt.show()\nBecause this is not JupyterLab, note that we always have to end our statements with plt.show() to show the plot.",
+    "section": "How This Workshop Works",
+    "text": "How This Workshop Works\nThere are two separate tabs for each demo - an R one and a Python one. Pick your path. Both of them are loaded into the web browser, so feel free to switch between them to try out different approaches.\n\nFor R users, we will be using the ggplot2 package\nFor Python Users, we will be using the seaborn package.\n\nThe play button on the right of a code window lets you execute that code.\nNote that there are two levels of setting options for Python code: the seaborn level and the matplotlib level, because seaborn is an extension of matplotlib. seaborn options look like this:\nmy_plot.set_xlabel(\"Python Rules\")\nVersus the matplotlib level, which looks like this:\nplt.show()\nBecause this is not JupyterLab, note that we always have to end our statements with plt.show() to show the plot.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better Plots</span>"
+      "Better Plots"
     ]
   },
   {
     "objectID": "index.html#overview-of-data",
     "href": "index.html#overview-of-data",
     "title": "Better Plots",
-    "section": "0.2 Overview of Data",
-    "text": "0.2 Overview of Data\nWe’re going to be using a TV Show dataset.\n\nRPython",
+    "section": "Overview of Data",
+    "text": "Overview of Data\nWe’re going to be using a TV Show dataset. Try running the code below for your language of interest.\n\nRPython",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Better Plots</span>"
+      "Better Plots"
     ]
   },
   {
@@ -557,6 +557,16 @@
     "text": "5.17 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#reminder",
+    "href": "index.html#reminder",
+    "title": "Better Plots",
+    "section": "Reminder",
+    "text": "Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
+    "crumbs": [
+      "Better Plots"
     ]
   }
 ]
