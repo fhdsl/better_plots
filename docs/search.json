@@ -32,41 +32,41 @@
   {
     "objectID": "01-setup.html",
     "href": "01-setup.html",
-    "title": "2  Setting up Our plot",
+    "title": "1  Setting up Our plot",
     "section": "",
-    "text": "2.1 Motivation: Exploratory versus Explanatory",
+    "text": "1.1 Motivation: Exploratory versus Explanatory",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
     "objectID": "01-setup.html#motivation-exploratory-versus-explanatory",
     "href": "01-setup.html#motivation-exploratory-versus-explanatory",
-    "title": "2  Setting up Our plot",
+    "title": "1  Setting up Our plot",
     "section": "",
     "text": "Exploratory analysis:\n\nexploring and understanding the data, conducting the analysis\n\n\nExplanatory analysis:\n\nexplaining your findings from your analysis in a coherent narrative that leads to a call to action",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
     "objectID": "01-setup.html#effective-visual-communication",
     "href": "01-setup.html#effective-visual-communication",
-    "title": "2  Setting up Our plot",
-    "section": "2.2 Effective Visual Communication",
-    "text": "2.2 Effective Visual Communication\nFocus on three techniques:\n\nDecluttering your plot\nAnnotating your graph and data\nHighlight data using Preattentive Attributes",
+    "title": "1  Setting up Our plot",
+    "section": "1.2 Effective Visual Communication",
+    "text": "1.2 Effective Visual Communication\nFocus on three techniques:\n\nDecluttering your plot\nAnnotating your graph and data\nHighlight data using Preattentive Attributes",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
     "objectID": "01-setup.html#paper-doll-approach",
     "href": "01-setup.html#paper-doll-approach",
-    "title": "2  Setting up Our plot",
-    "section": "2.3 Paper Doll Approach",
-    "text": "2.3 Paper Doll Approach\n\n\n\nWe’re going to take a basic plot and dress it up\nModify its appearance to make our point more understandable and immediate",
+    "title": "1  Setting up Our plot",
+    "section": "1.3 Paper Doll Approach",
+    "text": "1.3 Paper Doll Approach\n\n\n\nWe’re going to take a basic plot and dress it up\nModify its appearance to make our point more understandable and immediate",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
@@ -82,171 +82,171 @@
   {
     "objectID": "01-setup.html#dressing-up-my_plot",
     "href": "01-setup.html#dressing-up-my_plot",
-    "title": "2  Setting up Our plot",
-    "section": "2.5 Dressing up my_plot",
-    "text": "2.5 Dressing up my_plot\nNow, when we want to modify our plot, we can use my_plot. More on this in the next notebook. We’re basically going to add commands to modify our plot. I like to think of it as a paper doll approach: we are dressing our plot in different clothes.\n\nRPython",
+    "title": "1  Setting up Our plot",
+    "section": "1.5 Dressing up my_plot",
+    "text": "1.5 Dressing up my_plot\nNow, when we want to modify our plot, we can use my_plot. More on this in the next notebook. We’re basically going to add commands to modify our plot. I like to think of it as a paper doll approach: we are dressing our plot in different clothes.\n\nRPython",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Setting up Our plot</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html",
     "href": "02-decluttering.html",
-    "title": "3  Decluttering Plots",
+    "title": "2  Decluttering Plots",
     "section": "",
-    "text": "3.1 Quick Reminder of our plots\nThis is the plot we’re going to start dressing up today.",
+    "text": "2.1 Quick Reminder of our plots\nThis is the plot we’re going to start dressing up today.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#quick-reminder-of-our-plots",
     "href": "02-decluttering.html#quick-reminder-of-our-plots",
-    "title": "3  Decluttering Plots",
+    "title": "2  Decluttering Plots",
     "section": "",
     "text": "RPython",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#why-do-we-need-to-declutter-our-graphs",
     "href": "02-decluttering.html#why-do-we-need-to-declutter-our-graphs",
-    "title": "3  Decluttering Plots",
-    "section": "3.2 Why do we need to declutter our graphs?",
-    "text": "3.2 Why do we need to declutter our graphs?\n\nReduce cognitive load (help tired and cranky viewers)\nViewer can focus on what matters\nNot all information is useful for your viewer",
+    "title": "2  Decluttering Plots",
+    "section": "2.2 Why do we need to declutter our graphs?",
+    "text": "2.2 Why do we need to declutter our graphs?\n\nReduce cognitive load (help tired and cranky viewers)\nViewer can focus on what matters\nNot all information is useful for your viewer",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#example-london-subway-diagram",
     "href": "02-decluttering.html#example-london-subway-diagram",
-    "title": "3  Decluttering Plots",
-    "section": "3.3 Example: London Subway Diagram",
-    "text": "3.3 Example: London Subway Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\nTriumph of minimal design\nRemoves geography\nEmphasizes: what lines to I take to get from A to B?\n\n\n\nhttp://theconversation.com/sublime-design-the-london-underground-map-26240",
+    "title": "2  Decluttering Plots",
+    "section": "2.3 Example: London Subway Diagram",
+    "text": "2.3 Example: London Subway Diagram\n\n\n\n\n\n\n\n\n\n\n\n\n\nTriumph of minimal design\nRemoves geography\nEmphasizes: what lines to I take to get from A to B?\n\n\n\nhttp://theconversation.com/sublime-design-the-london-underground-map-26240",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#cognitive-load",
     "href": "02-decluttering.html#cognitive-load",
-    "title": "3  Decluttering Plots",
-    "section": "3.4 Cognitive Load",
-    "text": "3.4 Cognitive Load\n\nThink of your audience:\n\nTired and cranky and want you to get to the point!\nShort term memory 5 +/- 2 things at once\n\nRemove elements that distract from your message\n\nShadows, 3D Effects\nLegends/too many colors\nAxis Titles (sometimes)",
+    "title": "2  Decluttering Plots",
+    "section": "2.4 Cognitive Load",
+    "text": "2.4 Cognitive Load\n\nThink of your audience:\n\nTired and cranky and want you to get to the point!\nShort term memory 5 +/- 2 things at once\n\nRemove elements that distract from your message\n\nShadows, 3D Effects\nLegends/too many colors\nAxis Titles (sometimes)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#ask-yourself",
     "href": "02-decluttering.html#ask-yourself",
-    "title": "3  Decluttering Plots",
-    "section": "3.5 Ask Yourself",
-    "text": "3.5 Ask Yourself\n\nknitr::include_graphics(\"image/before-after.png\")",
+    "title": "2  Decluttering Plots",
+    "section": "2.5 Ask Yourself",
+    "text": "2.5 Ask Yourself\n\nknitr::include_graphics(\"image/before-after.png\")",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#theming",
     "href": "02-decluttering.html#theming",
-    "title": "3  Decluttering Plots",
-    "section": "3.6 Theming",
-    "text": "3.6 Theming\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.",
+    "title": "2  Decluttering Plots",
+    "section": "2.6 Theming",
+    "text": "2.6 Theming\nThe neat thing about ggplot2 is that you can modify the plot code by adding modifiers with the + (plus) sign.\nWe’re going to take a “paper doll” approach to our plot to modifying it - each modifier can be thought of as a set of “clothes” that we dress our plot in.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#removing-stuff",
     "href": "02-decluttering.html#removing-stuff",
-    "title": "3  Decluttering Plots",
-    "section": "3.7 Removing Stuff",
-    "text": "3.7 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss on slack:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
+    "title": "2  Decluttering Plots",
+    "section": "2.7 Removing Stuff",
+    "text": "2.7 Removing Stuff\nThe defaults for the plot are decent, but have some distracting elements. We can declutter our plot by removing some of these distracting elements.\nBefore you move on, discuss on slack:\n\nWhat parts of the plot are distracting from your message about tv shows that are risers?",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#one-note",
     "href": "02-decluttering.html#one-note",
-    "title": "3  Decluttering Plots",
-    "section": "3.8 One note",
-    "text": "3.8 One note\nIn each section, we’re trying different types of modification, so they’re not cumulative. However, you can cut and paste the modifications together in the end to have your final customized plot.",
+    "title": "2  Decluttering Plots",
+    "section": "2.8 One note",
+    "text": "2.8 One note\nIn each section, we’re trying different types of modification, so they’re not cumulative. However, you can cut and paste the modifications together in the end to have your final customized plot.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#intelligent-defaults-using-built-in-themes",
     "href": "02-decluttering.html#intelligent-defaults-using-built-in-themes",
-    "title": "3  Decluttering Plots",
-    "section": "3.9 Intelligent Defaults: Using Built in Themes",
-    "text": "3.9 Intelligent Defaults: Using Built in Themes\nA lot of the simplification can come from built in themes. Themes are like a full wardrobe for our paper dolls, specifying lots of different details.\n\nRPython\n\n\nAdding theme_minimal() will remove a lot of the background elements. Try it out and compare it with the above plot.\nBuilt in themes let you be more efficient in paring elements down, but you will often find that you need to customize them. That’s what we’ll look at next.\n\n\n\n\n\n\n\n\n\n\nSeaborn lets you set a style using .set_style(). There are number of built in defaults:\n\nwhite\ndark\nwhitegrid\ndarkgrid\nticks",
+    "title": "2  Decluttering Plots",
+    "section": "2.9 Intelligent Defaults: Using Built in Themes",
+    "text": "2.9 Intelligent Defaults: Using Built in Themes\nA lot of the simplification can come from built in themes. Themes are like a full wardrobe for our paper dolls, specifying lots of different details.\n\nRPython\n\n\nAdding theme_minimal() will remove a lot of the background elements. Try it out and compare it with the above plot.\nBuilt in themes let you be more efficient in paring elements down, but you will often find that you need to customize them. That’s what we’ll look at next.\n\n\n\n\n\n\n\n\n\n\nSeaborn lets you set a style using .set_style(). There are number of built in defaults:\n\nwhite\ndark\nwhitegrid\ndarkgrid\nticks",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#removing-elements",
     "href": "02-decluttering.html#removing-elements",
-    "title": "3  Decluttering Plots",
-    "section": "3.10 Removing elements",
-    "text": "3.10 Removing elements\nWe can customize our plot even further by adding a theme() function to the end of our plot. We’ll use this to remove individual elements from the plot.\nNote: If we change any theme attributes after calling theme_minimal(), it will basically overwrite the previous built-in theme. This means that order is important, so keep that in mind!\ntheme() looks very intimidating, because it has lots of different arguments. We’ll only look at a few of these:\n\naxis.title, axis.title.x and axis.title.y (The labels for the axes)\npanel.grid (grid lines)\nlegend.position (Placing the legend, including removing it)\n\nHow will we remove these elements? For most of them, we will specify an element called element_blank() to these arguments. What is this? Think of it as a special placeholder that says we don’t want to see this element.",
+    "title": "2  Decluttering Plots",
+    "section": "2.10 Removing elements",
+    "text": "2.10 Removing elements\nWe can customize our plot even further by adding a theme() function to the end of our plot. We’ll use this to remove individual elements from the plot.\nNote: If we change any theme attributes after calling theme_minimal(), it will basically overwrite the previous built-in theme. This means that order is important, so keep that in mind!\ntheme() looks very intimidating, because it has lots of different arguments. We’ll only look at a few of these:\n\naxis.title, axis.title.x and axis.title.y (The labels for the axes)\npanel.grid (grid lines)\nlegend.position (Placing the legend, including removing it)\n\nHow will we remove these elements? For most of them, we will specify an element called element_blank() to these arguments. What is this? Think of it as a special placeholder that says we don’t want to see this element.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#remove-some-text",
     "href": "02-decluttering.html#remove-some-text",
-    "title": "3  Decluttering Plots",
-    "section": "3.11 Remove some Text",
-    "text": "3.11 Remove some Text\nLet’s try simplifying our plot by removing the x-axis text. By context, the label seasonNumber isn’t that helpful.\n\nRPython",
+    "title": "2  Decluttering Plots",
+    "section": "2.11 Remove some Text",
+    "text": "2.11 Remove some Text\nLet’s try simplifying our plot by removing the x-axis text. By context, the label seasonNumber isn’t that helpful.\n\nRPython",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#remove-the-gridlines",
     "href": "02-decluttering.html#remove-the-gridlines",
-    "title": "3  Decluttering Plots",
-    "section": "3.12 Remove the Gridlines",
-    "text": "3.12 Remove the Gridlines\nTry removing the gridlines. Is that helpful or not?\n\nRPython",
+    "title": "2  Decluttering Plots",
+    "section": "2.12 Remove the Gridlines",
+    "text": "2.12 Remove the Gridlines\nTry removing the gridlines. Is that helpful or not?\n\nRPython",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#remove-the-legend",
     "href": "02-decluttering.html#remove-the-legend",
-    "title": "3  Decluttering Plots",
-    "section": "3.13 Remove the Legend",
-    "text": "3.13 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
+    "title": "2  Decluttering Plots",
+    "section": "2.13 Remove the Legend",
+    "text": "2.13 Remove the Legend\n\nRPython\n\n\nSometimes, to remove some items, like the legend, you have to specify it not as element_blank, but as “none”. Try removing the legend.\nHmm, it is more simplified, but we have lost all the information about the categories! We can add that information back with the use of color in section 3.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#your-turn",
     "href": "02-decluttering.html#your-turn",
-    "title": "3  Decluttering Plots",
-    "section": "3.14 Your turn",
-    "text": "3.14 Your turn\n\nRPython\n\n\nPlay with different combinations of these different theme() statements to customize your plot. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.\n\n\n\n\n\n\n\n\n\n\nPlay around with different combinations of decluttering here. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.",
+    "title": "2  Decluttering Plots",
+    "section": "2.14 Your turn",
+    "text": "2.14 Your turn\n\nRPython\n\n\nPlay with different combinations of these different theme() statements to customize your plot. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.\n\n\n\n\n\n\n\n\n\n\nPlay around with different combinations of decluttering here. If you want to remove a line, you can put a # in front of that line. That will make it a comment and that line of code won’t run.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
     "objectID": "02-decluttering.html#for-more-information",
     "href": "02-decluttering.html#for-more-information",
-    "title": "3  Decluttering Plots",
-    "section": "3.15 For more information",
-    "text": "3.15 For more information\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)",
+    "title": "2  Decluttering Plots",
+    "section": "2.15 For more information",
+    "text": "2.15 For more information\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Decluttering Plots</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
   },
   {
@@ -382,181 +382,181 @@
   {
     "objectID": "04-highlighting.html",
     "href": "04-highlighting.html",
-    "title": "5  Highlighting Your Plots",
+    "title": "4  Highlighting Your Plots",
     "section": "",
-    "text": "5.1 Preattentive attributes\nStorytelling with Data",
+    "text": "4.1 Preattentive attributes\nStorytelling with Data",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#preattentive-attributes",
     "href": "04-highlighting.html#preattentive-attributes",
-    "title": "5  Highlighting Your Plots",
+    "title": "4  Highlighting Your Plots",
     "section": "",
     "text": "Color and contrast are known as preattentive attributes. Our unconscious brain is aware of these kinds of attributes even before we consciously process the content of a graph.\nHow many 3s are there in this image?",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#how-about-now",
     "href": "04-highlighting.html#how-about-now",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.2 How about now?",
-    "text": "5.2 How about now?\n\n\nYou can use color and contrast to highlight aspects of the data. How many 3s are there in this image now? Notice how much quicker you can count them.\nThat’s the power of preattentive attributes!\n\n\n\n\n\n\n\n\n\n\n\n\nStorytelling with Data",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.2 How about now?",
+    "text": "4.2 How about now?\n\n\nYou can use color and contrast to highlight aspects of the data. How many 3s are there in this image now? Notice how much quicker you can count them.\nThat’s the power of preattentive attributes!\n\n\n\n\n\n\n\n\n\n\n\n\nStorytelling with Data",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#best-practices-for-using-color-stephen-few",
     "href": "04-highlighting.html#best-practices-for-using-color-stephen-few",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.3 Best Practices for Using Color (Stephen Few)",
-    "text": "5.3 Best Practices for Using Color (Stephen Few)\n\nUse color only when needed to serve a particular communication goal\nUse different colors only when they correspond to differences of meaning in the data.\nUse soft, natural colors to display most information and bright and/or dark colors to highlight information that requires greater attention.\n\nPractical Rules for Using Color",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.3 Best Practices for Using Color (Stephen Few)",
+    "text": "4.3 Best Practices for Using Color (Stephen Few)\n\nUse color only when needed to serve a particular communication goal\nUse different colors only when they correspond to differences of meaning in the data.\nUse soft, natural colors to display most information and bright and/or dark colors to highlight information that requires greater attention.\n\nPractical Rules for Using Color",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#changing-the-base-plot-slightly",
     "href": "04-highlighting.html#changing-the-base-plot-slightly",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.4 Changing the base plot (slightly)",
-    "text": "5.4 Changing the base plot (slightly)\nRemember our original plot mapped color to title. There’s also a variable called status in our data. status has two different values: a tv show can be a riser (positive trend in ratings), or be a faller (negative trend in ratings).\nLet’s modify the plot to use this variable to color our lines. We’ll save it as a different object, this time called my_new_plot.\n\nRPython\n\n\nIn R, we map color to status, and group to title\n\n\n\n\n\n\n\n\n\n\nIn Python, we map hue to status, and units to title:",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.4 Changing the base plot (slightly)",
+    "text": "4.4 Changing the base plot (slightly)\nRemember our original plot mapped color to title. There’s also a variable called status in our data. status has two different values: a tv show can be a riser (positive trend in ratings), or be a faller (negative trend in ratings).\nLet’s modify the plot to use this variable to color our lines. We’ll save it as a different object, this time called my_new_plot.\n\nRPython\n\n\nIn R, we map color to status, and group to title\n\n\n\n\n\n\n\n\n\n\nIn Python, we map hue to status, and units to title:",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#highlighting-part-of-your-data",
     "href": "04-highlighting.html#highlighting-part-of-your-data",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.5 Highlighting part of your data",
-    "text": "5.5 Highlighting part of your data\nWhat if we only want to highlight one group in the data? In this case, maybe we want to highlight the risers in our dataset. If we color them blue, and leave the others as grey we can immediately highlight them as important and worth noticing in the context of the other data.",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.5 Highlighting part of your data",
+    "text": "4.5 Highlighting part of your data\nWhat if we only want to highlight one group in the data? In this case, maybe we want to highlight the risers in our dataset. If we color them blue, and leave the others as grey we can immediately highlight them as important and worth noticing in the context of the other data.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#r-1",
     "href": "04-highlighting.html#r-1",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.6 R",
-    "text": "5.6 R\nWe can actually manually color our traces by using scale_color_manual(). This lets us manually map our values in our variable (riser and faller) to colors: (blue and grey).\nIf you’ve mapped a variable to fill, you’ll have to use scale_fill_manual() to map values to colors.",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.6 R",
+    "text": "4.6 R\nWe can actually manually color our traces by using scale_color_manual(). This lets us manually map our values in our variable (riser and faller) to colors: (blue and grey).\nIf you’ve mapped a variable to fill, you’ll have to use scale_fill_manual() to map values to colors.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#python-1",
     "href": "04-highlighting.html#python-1",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.7 Python",
-    "text": "5.7 Python",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.7 Python",
+    "text": "4.7 Python",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#put-it-all-together",
     "href": "04-highlighting.html#put-it-all-together",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.8 Put it all together!",
-    "text": "5.8 Put it all together!\nCut and paste all your modifiers and make your final figure below!\n\nRPython\n\n\nIf you leave out a line with a #, make sure that there is no + on your last real line.",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.8 Put it all together!",
+    "text": "4.8 Put it all together!\nCut and paste all your modifiers and make your final figure below!\n\nRPython\n\n\nIf you leave out a line with a #, make sure that there is no + on your last real line.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#more-best-practices-for-figures",
     "href": "04-highlighting.html#more-best-practices-for-figures",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.9 More Best Practices for figures:",
-    "text": "5.9 More Best Practices for figures:\nTen Simple Rules for Better Figures: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.9 More Best Practices for figures:",
+    "text": "4.9 More Best Practices for figures:\nTen Simple Rules for Better Figures: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#more-tips-and-tricks-for-using-contrast-and-color",
     "href": "04-highlighting.html#more-tips-and-tricks-for-using-contrast-and-color",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.10 More tips and tricks for using contrast and color",
-    "text": "5.10 More tips and tricks for using contrast and color\nIn 03-annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.10 More tips and tricks for using contrast and color",
+    "text": "4.10 More tips and tricks for using contrast and color\nIn 03-annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#conclusions",
     "href": "04-highlighting.html#conclusions",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.11 Conclusions",
-    "text": "5.11 Conclusions\nCongrats! You’re well on your way to learning how to make your figures more accessible.",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.11 Conclusions",
+    "text": "4.11 Conclusions\nCongrats! You’re well on your way to learning how to make your figures more accessible.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#putting-it-all-together",
     "href": "04-highlighting.html#putting-it-all-together",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.12 Putting it all Together",
-    "text": "5.12 Putting it all Together\n\n\n\n\n\n\n\n\n\nhttps://t.co/KSGQzaH0Mh",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.12 Putting it all Together",
+    "text": "4.12 Putting it all Together\n\n\n\n\n\n\n\n\n\nhttps://t.co/KSGQzaH0Mh",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#going-farther",
     "href": "04-highlighting.html#going-farther",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.13 Going Farther",
-    "text": "5.13 Going Farther",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.13 Going Farther",
+    "text": "4.13 Going Farther",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#ggplot2-flipbook",
     "href": "04-highlighting.html#ggplot2-flipbook",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.14 ggplot2 flipbook",
-    "text": "5.14 ggplot2 flipbook\nGood examples for styling your plots!\nhttps://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html\n\nArctic Ice\nFlipping Seats\nMilk Cows",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.14 ggplot2 flipbook",
+    "text": "4.14 ggplot2 flipbook\nGood examples for styling your plots!\nhttps://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html\n\nArctic Ice\nFlipping Seats\nMilk Cows",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#please-fill-out-our-survey",
     "href": "04-highlighting.html#please-fill-out-our-survey",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.15 Please fill out our survey!",
-    "text": "5.15 Please fill out our survey!",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.15 Please fill out our survey!",
+    "text": "4.15 Please fill out our survey!",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#references",
     "href": "04-highlighting.html#references",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.16 References",
-    "text": "5.16 References\n\nStorytelling with Data\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.16 References",
+    "text": "4.16 References\n\nStorytelling with Data\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
     "objectID": "04-highlighting.html#keep-in-touch",
     "href": "04-highlighting.html#keep-in-touch",
-    "title": "5  Highlighting Your Plots",
-    "section": "5.17 Keep in Touch",
-    "text": "5.17 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.17 Keep in Touch",
+    "text": "4.17 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
   },
   {
@@ -567,6 +567,16 @@
     "text": "Reminder\nThis workshop adheres to the DaSL Learning Community Participation Guidelines:\nParticipation Guidelines\nPlease be respectful of your fellow learners and help each other learn.\nRemember, it’s dangerous to learn alone! So partner up with someone, it’s fun to learn together.",
     "crumbs": [
       "Better Plots"
+    ]
+  },
+  {
+    "objectID": "01-setup.html#dressing-up-a-base-plot",
+    "href": "01-setup.html#dressing-up-a-base-plot",
+    "title": "1  Setting up Our plot",
+    "section": "1.4 Dressing Up a Base Plot",
+    "text": "1.4 Dressing Up a Base Plot\nWe’ll start with a base plot that we’ll dress up. Here’s what that looks like.\n\nRPython\n\n\nLet’s save our plot into an R object called a ggplot. We’ll use the &lt;- (left arrow) to assign it to the variable called my_plot:\n\n\n\n\n\n\n\n\n\n\nWe need a few packages for Python. We need the pandas, seaborn, and matplotlib packages.\nWe will start by making a plot object with sns.lineplot():",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setting up Our plot</span>"
     ]
   }
 ]
