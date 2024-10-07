@@ -254,7 +254,7 @@
     "href": "02-decluttering.html#for-more-information",
     "title": "2  Decluttering Plots",
     "section": "2.15 For more information",
-    "text": "2.15 For more information\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)",
+    "text": "2.15 For more information\n\nRPython\n\n\nTake a look at the ggthemes gallery for other pre-made themes that can help you declutter your plot.\nhttps://www.datanovia.com/en/blog/ggplot-themes-gallery/\nLook at the documentation for theme() to understand how to customize different elements. Each element maps to four different elements:\nelement_blank() - we’ve seen this. element_text() - anything that’s text (such as labels - this is where you can specify arguments like angle,size) element_rect() - anything that’s a rectangle (such as the panel) element_line() - anything that’s a line (such as axes and grid lines)\n\n\nCheck out the Python Graph Gallery for more great examples:\nhttps://python-graph-gallery.com/",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Decluttering Plots</span>"
     ]
@@ -304,7 +304,7 @@
     "href": "03-annotating.html#dont-label-everything",
     "title": "3  Annotating Your Plot",
     "section": "3.4 Don’t label everything",
-    "text": "3.4 Don’t label everything\n\n\n\nThink about only labeling the data that matters\nIf you want someone to compare two shows, label them\nThink about groupings and “super categories” to help your viewers make sense of the graph]",
+    "text": "3.4 Don’t label everything\n\n\nThink about only labeling the data that matters\nIf you want someone to compare two shows, label them\nThink about groupings and “super categories” to help your viewers make sense of the graph]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
@@ -384,7 +384,7 @@
     "href": "03-annotating.html#for-more-information",
     "title": "3  Annotating Your Plot",
     "section": "3.12 For more information",
-    "text": "3.12 For more information\nFor more examples of how annotating can make figures more clear, please check out Storytelling with Data: https://storytellingwithdata.com, especially the linegraphs with annotations for examples: http://www.storytellingwithdata.com/blog/2018/1/22/88-annotated-line-graphs\nMaking annotations first class citizens in data visualization: https://medium.com/@Elijah_Meeks/making-annotations-first-class-citizens-in-data-visualization-21db6383d3fe",
+    "text": "3.12 For more information\n\nFor more examples of how annotating can make figures more clear, please check out Storytelling with Data, especially the linegraphs with annotations for examples.\nMaking annotations first class citizens in data visualization: https://medium.com/@Elijah_Meeks/making-annotations-first-class-citizens-in-data-visualization-21db6383d3fe",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
@@ -464,7 +464,17 @@
     "href": "04-highlighting.html#python-1",
     "title": "4  Highlighting Your Plots",
     "section": "4.7 Python",
-    "text": "4.7 Python",
+    "text": "4.7 Python\nWe can color our traces according to status by mapping units to title and we also need to put the argument estimator=None, so that seaborn doesn’t try to average them together into a single line.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+    ]
+  },
+  {
+    "objectID": "04-highlighting.html#try-out-mapping-colors",
+    "href": "04-highlighting.html#try-out-mapping-colors",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.8 Try out mapping colors",
+    "text": "4.8 Try out mapping colors\nTry using different colors to contrast the lines in the values argument to scale_color_manual(). A small list of color names an be found here: https://www.r-graph-gallery.com/42-colors-names.html\n\nRPython",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -473,8 +483,8 @@
     "objectID": "04-highlighting.html#put-it-all-together",
     "href": "04-highlighting.html#put-it-all-together",
     "title": "4  Highlighting Your Plots",
-    "section": "4.8 Put it all together!",
-    "text": "4.8 Put it all together!\nCut and paste all your modifiers and make your final figure below!\n\nRPython\n\n\nIf you leave out a line with a #, make sure that there is no + on your last real line.",
+    "section": "4.9 Put it all together!",
+    "text": "4.9 Put it all together!\nCut and paste all your modifiers and make your final figure below!\n\nRPython\n\n\nIf you leave out a line with a #, make sure that there is no + on your last real line.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -483,8 +493,8 @@
     "objectID": "04-highlighting.html#more-best-practices-for-figures",
     "href": "04-highlighting.html#more-best-practices-for-figures",
     "title": "4  Highlighting Your Plots",
-    "section": "4.9 More Best Practices for figures:",
-    "text": "4.9 More Best Practices for figures:\nTen Simple Rules for Better Figures: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833",
+    "section": "4.10 More Best Practices for figures:",
+    "text": "4.10 More Best Practices for figures:\nTen Simple Rules for Better Figures: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -493,8 +503,8 @@
     "objectID": "04-highlighting.html#more-tips-and-tricks-for-using-contrast-and-color",
     "href": "04-highlighting.html#more-tips-and-tricks-for-using-contrast-and-color",
     "title": "4  Highlighting Your Plots",
-    "section": "4.10 More tips and tricks for using contrast and color",
-    "text": "4.10 More tips and tricks for using contrast and color\nIn 03-annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
+    "section": "4.11 More tips and tricks for using contrast and color",
+    "text": "4.11 More tips and tricks for using contrast and color\nIn 03-annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -503,8 +513,8 @@
     "objectID": "04-highlighting.html#conclusions",
     "href": "04-highlighting.html#conclusions",
     "title": "4  Highlighting Your Plots",
-    "section": "4.11 Conclusions",
-    "text": "4.11 Conclusions\nCongrats! You’re well on your way to learning how to make your figures more accessible.",
+    "section": "4.12 Conclusions",
+    "text": "4.12 Conclusions\nCongrats! You’re well on your way to learning how to make your figures more accessible.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -513,8 +523,8 @@
     "objectID": "04-highlighting.html#putting-it-all-together",
     "href": "04-highlighting.html#putting-it-all-together",
     "title": "4  Highlighting Your Plots",
-    "section": "4.12 Putting it all Together",
-    "text": "4.12 Putting it all Together\n\n\n\n\n\n\n\n\n\nhttps://t.co/KSGQzaH0Mh",
+    "section": "4.13 Putting it all Together",
+    "text": "4.13 Putting it all Together\n\n\n\n\n\n\n\n\n\nhttps://t.co/KSGQzaH0Mh",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -523,8 +533,8 @@
     "objectID": "04-highlighting.html#going-farther",
     "href": "04-highlighting.html#going-farther",
     "title": "4  Highlighting Your Plots",
-    "section": "4.13 Going Farther",
-    "text": "4.13 Going Farther",
+    "section": "4.14 Going Farther",
+    "text": "4.14 Going Farther",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -533,8 +543,8 @@
     "objectID": "04-highlighting.html#ggplot2-flipbook",
     "href": "04-highlighting.html#ggplot2-flipbook",
     "title": "4  Highlighting Your Plots",
-    "section": "4.14 ggplot2 flipbook",
-    "text": "4.14 ggplot2 flipbook\nGood examples for styling your plots!\nhttps://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html\n\nArctic Ice\nFlipping Seats\nMilk Cows",
+    "section": "4.15 ggplot2 flipbook",
+    "text": "4.15 ggplot2 flipbook\nGood examples for styling your plots!\nhttps://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html\n\nArctic Ice\nFlipping Seats\nMilk Cows",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -543,8 +553,8 @@
     "objectID": "04-highlighting.html#please-fill-out-our-survey",
     "href": "04-highlighting.html#please-fill-out-our-survey",
     "title": "4  Highlighting Your Plots",
-    "section": "4.15 Please fill out our survey!",
-    "text": "4.15 Please fill out our survey!",
+    "section": "4.16 Please fill out our survey!",
+    "text": "4.16 Please fill out our survey!",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -553,8 +563,8 @@
     "objectID": "04-highlighting.html#references",
     "href": "04-highlighting.html#references",
     "title": "4  Highlighting Your Plots",
-    "section": "4.16 References",
-    "text": "4.16 References\n\nStorytelling with Data\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
+    "section": "4.17 References",
+    "text": "4.17 References\n\nStorytelling with Data\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -563,8 +573,8 @@
     "objectID": "04-highlighting.html#keep-in-touch",
     "href": "04-highlighting.html#keep-in-touch",
     "title": "4  Highlighting Your Plots",
-    "section": "4.17 Keep in Touch",
-    "text": "4.17 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
+    "section": "4.18 Keep in Touch",
+    "text": "4.18 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
