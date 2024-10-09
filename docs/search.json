@@ -534,7 +534,7 @@
     "href": "04-highlighting.html#please-fill-out-our-survey",
     "title": "4  Highlighting Your Plots",
     "section": "4.13 Please fill out our survey!",
-    "text": "4.13 Please fill out our survey!\nhttps://forms.gle/Zu7DSM9GzKBf5joPA\n\nqrcode::qr_code(\"https://forms.gle/Zu7DSM9GzKBf5joPA\")\n\n                  \n ▗▄▄▄ ▖  ▄ ▗▗▄▄▄  \n ▐▗▄▐▝▙▛▗▗▀▗▐▗▄▐  \n ▐▐█▐▝▚▚▄▖▄▗▐▐█▐  \n ▐▄▄▟▐▐▗▜▜▗▐▐▄▄▟  \n ▗▄▄▗▄▄▐▚▌▄▜▖▖▖▖  \n ▗▌▜▚▟▌▄ ▛▚▚▞█ ▝  \n ▐▗▄▙▞▛▌▝▙ ▐▞▘▙▘  \n ▝▌▌▗▌▜▝██▞▀▜▀▄▝  \n  ▞▞▄▌▚▐▚▝▖▙▀▞▄▘  \n ▐▚█▄▜▄▄ ▞▙▐▀▛▐▝  \n ▐ ▖▄▙▘▌▝ ▝█▟▙▗▙  \n ▗▄▄▄▐▐▝█▟█▟▗▐█▀  \n ▐▗▄▐▗▙▐▚█ ▐▄▟▗▞  \n ▐▐█▐▐▘▄ ▖▟▌▄▄█▛  \n ▐▄▄▟▐▀▌▝▞▞▞▞▄▚▘  \n                  \n                  \n\nuse plot() for a better quality image",
+    "text": "4.13 Please fill out our survey!\nhttps://forms.gle/Zu7DSM9GzKBf5joPA",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
