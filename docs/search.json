@@ -10,11 +10,11 @@
     ]
   },
   {
-    "objectID": "index.html#where-is-this-workshop",
-    "href": "index.html#where-is-this-workshop",
+    "objectID": "index.html#where-are-the-workshop-materials",
+    "href": "index.html#where-are-the-workshop-materials",
     "title": "Better Plots",
-    "section": "Where is This Workshop??",
-    "text": "Where is This Workshop??\n\nhttps://hutchdatascience.com/better_plots\nhttps://better-plots.netlify.app",
+    "section": "Where are the Workshop Materials?",
+    "text": "Where are the Workshop Materials?\n\n\n\nMaterials\n\nhttps://hutchdatascience.com/better_plots\nhttps://better-plots.netlify.app\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions\n\nAsk Questions via Slido\nSlido Link",
     "crumbs": [
       "Better Plots"
     ]
@@ -344,7 +344,7 @@
     "href": "03-annotating.html#changing-titles",
     "title": "3  Annotating Your Plot",
     "section": "3.7 Changing Titles",
-    "text": "3.7 Changing Titles\nThere is a function called labs() that will let you change the titles for a graph. Figure out where these titles are added to the graph below.\n\nRPython\n\n\n\n\n\n\n\n\n\n\nWhy is labs() not part of theme()? This is one confusing thing about ggplot2. theme() is about the appearance (position, angle, font size) of an element, whereas the labs() function actually provides the content.\n\n\nWe can use the .set_title() and set_xlabel()/set_ylabel() to change our titles and labels.",
+    "text": "3.7 Changing Titles\n\nRPython\n\n\nThere is a function called labs() that will let you change the titles for a graph. Figure out where these titles are added to the graph below.\n\n\n\n\n\n\n\n\nWhy is labs() not part of theme()? This is one confusing thing about ggplot2. theme() is about the appearance (position, angle, font size) of an element, whereas the labs() function actually provides the content.\n\n\nWe can use the .set_title() and set_xlabel()/set_ylabel() to change our titles and labels.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Annotating Your Plot</span>"
     ]
@@ -464,7 +464,7 @@
     "href": "04-highlighting.html#try-out-mapping-colors",
     "title": "4  Highlighting Your Plots",
     "section": "4.6 Try out mapping colors",
-    "text": "4.6 Try out mapping colors\nTry using different colors to contrast the lines in the values argument to scale_color_manual(). A small list of color names an be found here: https://www.r-graph-gallery.com/42-colors-names.html\n\nRPython",
+    "text": "4.6 Try out mapping colors\nA small list of color names an be found here: https://www.r-graph-gallery.com/42-colors-names.html\n\nRPython\n\n\nTry using different colors to contrast the lines in the values argument to scale_color_manual().\n\n\n\n\n\n\n\n\n\n\nTry changing the palette argument to use different colors.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -494,7 +494,7 @@
     "href": "04-highlighting.html#more-tips-and-tricks-for-using-contrast-and-color",
     "title": "4  Highlighting Your Plots",
     "section": "4.9 More tips and tricks for using contrast and color",
-    "text": "4.9 More tips and tricks for using contrast and color\nIn 03-annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
+    "text": "4.9 More tips and tricks for using contrast and color\nIn Annotating, we saw that we can specify the line type for a particular graph. We can also specify line type as an aesthetic. Be careful with line types - too many in a figure can obscure your point.\nShapes for points can also be helpful for highlighting particular data points. Here’s a useful reference.\nMore information here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -520,11 +520,21 @@
     ]
   },
   {
+    "objectID": "04-highlighting.html#learning-community-session",
+    "href": "04-highlighting.html#learning-community-session",
+    "title": "4  Highlighting Your Plots",
+    "section": "4.12 Learning Community Session",
+    "text": "4.12 Learning Community Session\n\nShow off some plots or talk about visualization (5 minutes)\nFill out ideas here\n10/16 at 12-1:30 PM in Arnold M1-406",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
+    ]
+  },
+  {
     "objectID": "04-highlighting.html#please-fill-out-our-survey",
     "href": "04-highlighting.html#please-fill-out-our-survey",
     "title": "4  Highlighting Your Plots",
-    "section": "4.12 Please fill out our survey!",
-    "text": "4.12 Please fill out our survey!",
+    "section": "4.13 Please fill out our survey!",
+    "text": "4.13 Please fill out our survey!\nhttps://forms.gle/Zu7DSM9GzKBf5joPA\n\nqrcode::qr_code(\"https://forms.gle/Zu7DSM9GzKBf5joPA\")\n\n                  \n ▗▄▄▄ ▖  ▄ ▗▗▄▄▄  \n ▐▗▄▐▝▙▛▗▗▀▗▐▗▄▐  \n ▐▐█▐▝▚▚▄▖▄▗▐▐█▐  \n ▐▄▄▟▐▐▗▜▜▗▐▐▄▄▟  \n ▗▄▄▗▄▄▐▚▌▄▜▖▖▖▖  \n ▗▌▜▚▟▌▄ ▛▚▚▞█ ▝  \n ▐▗▄▙▞▛▌▝▙ ▐▞▘▙▘  \n ▝▌▌▗▌▜▝██▞▀▜▀▄▝  \n  ▞▞▄▌▚▐▚▝▖▙▀▞▄▘  \n ▐▚█▄▜▄▄ ▞▙▐▀▛▐▝  \n ▐ ▖▄▙▘▌▝ ▝█▟▙▗▙  \n ▗▄▄▄▐▐▝█▟█▟▗▐█▀  \n ▐▗▄▐▗▙▐▚█ ▐▄▟▗▞  \n ▐▐█▐▐▘▄ ▖▟▌▄▄█▛  \n ▐▄▄▟▐▀▌▝▞▞▞▞▄▚▘  \n                  \n                  \n\nuse plot() for a better quality image",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -533,8 +543,8 @@
     "objectID": "04-highlighting.html#references",
     "href": "04-highlighting.html#references",
     "title": "4  Highlighting Your Plots",
-    "section": "4.13 References",
-    "text": "4.13 References\n\nStorytelling with Data\nPython Graph Gallery: Line Plots\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
+    "section": "4.14 References",
+    "text": "4.14 References\n\nStorytelling with Data\nPython Graph Gallery: Line Plots\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -543,8 +553,8 @@
     "objectID": "04-highlighting.html#keep-in-touch",
     "href": "04-highlighting.html#keep-in-touch",
     "title": "4  Highlighting Your Plots",
-    "section": "4.14 Keep in Touch",
-    "text": "4.14 Keep in Touch\n\nemail: tladera2 at fredhutch.org\nweb: https://laderast.github.io\nmastodon: tladeras",
+    "section": "4.15 Keep in Touch",
+    "text": "4.15 Keep in Touch\n\nemail: tladera2 at fredhutch.org\nweb: https://laderast.github.io\nmastodon: tladeras",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
