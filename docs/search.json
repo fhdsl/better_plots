@@ -10,6 +10,16 @@
     ]
   },
   {
+    "objectID": "index.html#where-are-these-slides",
+    "href": "index.html#where-are-these-slides",
+    "title": "Better Plots",
+    "section": "Where Are These Slides?",
+    "text": "Where Are These Slides?\nhttps://better-plots.netlify.app https://hutchdatascience.com/better_plots",
+    "crumbs": [
+      "Better Plots"
+    ]
+  },
+  {
     "objectID": "index.html#reminder",
     "href": "index.html#reminder",
     "title": "Better Plots",
@@ -510,21 +520,11 @@
     ]
   },
   {
-    "objectID": "04-highlighting.html#ggplot2-flipbook",
-    "href": "04-highlighting.html#ggplot2-flipbook",
-    "title": "4  Highlighting Your Plots",
-    "section": "4.12 ggplot2 flipbook",
-    "text": "4.12 ggplot2 flipbook\nGood examples for styling your plots!\nhttps://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html\n\nArctic Ice\nFlipping Seats\nMilk Cows",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
-    ]
-  },
-  {
     "objectID": "04-highlighting.html#please-fill-out-our-survey",
     "href": "04-highlighting.html#please-fill-out-our-survey",
     "title": "4  Highlighting Your Plots",
-    "section": "4.13 Please fill out our survey!",
-    "text": "4.13 Please fill out our survey!",
+    "section": "4.12 Please fill out our survey!",
+    "text": "4.12 Please fill out our survey!",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -533,8 +533,8 @@
     "objectID": "04-highlighting.html#references",
     "href": "04-highlighting.html#references",
     "title": "4  Highlighting Your Plots",
-    "section": "4.14 References",
-    "text": "4.14 References\n\nStorytelling with Data\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
+    "section": "4.13 References",
+    "text": "4.13 References\n\nStorytelling with Data\nPython Graph Gallery: Line Plots\nHappy Days Jumping the Shark (Tableau Link)\nggplot2 flipbook\nAlison Hill: Take a Sad Plot and Make it Better",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
@@ -543,8 +543,8 @@
     "objectID": "04-highlighting.html#keep-in-touch",
     "href": "04-highlighting.html#keep-in-touch",
     "title": "4  Highlighting Your Plots",
-    "section": "4.15 Keep in Touch",
-    "text": "4.15 Keep in Touch\n\ntladera2 at fredhutch.org \nhttps://laderast.github.io \ntladeras",
+    "section": "4.14 Keep in Touch",
+    "text": "4.14 Keep in Touch\n\nemail: tladera2 at fredhutch.org\nweb: https://laderast.github.io\nmastodon: tladeras",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Highlighting Your Plots</span>"
     ]
